@@ -1,0 +1,7 @@
+apiVersion: v2
+name: base
+version: 0.1.0
+dependencies:
+  - name: ddosify
+    version: 1.3.0
+    repository: https://ddosify.github.io/ddosify-helm-charts/

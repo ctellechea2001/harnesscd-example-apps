@@ -1,0 +1,16 @@
+ddosify:
+  ingress:
+    enabled: true
+    className: nginx-internal
+    hosts:
+      - host: 
+        paths:
+          - path: /
+            pathType: Prefix
+  pvc:
+    influxDB:
+      storageClassName: "gp2"
+    postgres:
+      storageClassName: "gp2"
+    seaweedfs:
+      storageClassName: "gp2"
